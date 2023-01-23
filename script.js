@@ -48,7 +48,7 @@ for(let i=0;i<boxes.length;i++){
         if(checkWin()){
             document.getElementById('status').innerText=turn + " won";
         }
-        changeTurn();
+        else changeTurn();
 
     }
    });
