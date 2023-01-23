@@ -36,6 +36,15 @@ function checkWin(){
 }
 
 
+// for checking tie
+
+function checkTie(){
+    for(let i=0;i<boxes.length;i++){
+        if(boxes[i].innerText==="")return false;
+    }
+    return true;
+}
+
 // Logic
 
 
@@ -47,6 +56,8 @@ for(let i=0;i<boxes.length;i++){
         boxes[i].innerText=turn;
         if(checkWin()){
             document.getElementById('status').innerText=turn + " won";
+        }else if (checkTie()){
+            document.getElementById('status').innerText="It's a tie";
         }
         else changeTurn();
 
