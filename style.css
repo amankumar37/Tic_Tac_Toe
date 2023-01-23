@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --hue:150;
+    --saturation:50%;
+    --foreground-color:hsl(var(--hue),var(--saturation),75%);
+    --background-color:hsl(var(--hue),var(--saturation),25%);
+    --hover-color:hsl(var(--hue),var(--saturation),20%);
+    
+}
+body{
+    background-color: var(--background-color);
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav{
+    color:var(--foreground-color);
+    height:4vh;
+    display:flex;
+    align-items: center;
+    font-size: x-large;
+    justify-content: center;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#gameContainer{
+   
+    display:flex;
+    justify-content: center;
+    margin-top:10vh;
+    height:auto;
+
+}
+
+#container{
+    display:grid;
+    grid-template-rows:repeat(3,10vw);
+    grid-template-columns:repeat(3,10vw);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--foreground-color);
+    font-size: 4vw;
+    cursor: pointer;
+    color:var(--foreground-color)
+}
+.box:hover{
+    background-color:var(--hover-color);
+}
+.bt-0{
+    border-top: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+
+#gameInfo{
+    color:var(--foreground-color);
+    margin-left: 10vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1vw;
+}
+
+#reset{
+    width:5vw;
+    height:4vh;
+    font-size:2.5vh;
+    background-color: var(--background-color);
+    color:var(--foreground-color);
+    border: 2px solid var(--foreground-color);
+    cursor: pointer;
+    border-radius:10px;
+    margin-top: 3vh;
+}
+
+
+#reset:hover{
+    background-color: var(--foreground-color);
+    color:var(--background-color);
+    transition:0.2s;
+}
