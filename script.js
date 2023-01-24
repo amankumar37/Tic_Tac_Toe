@@ -1,6 +1,6 @@
 
 let turn = 'X';
-let color=[1,1.5,2,2.5,3];
+let color=[1];
 
 //funtion for changing turn
 const  changeTurn=()=>{
